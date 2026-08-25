@@ -20,6 +20,14 @@ Stop-gap bridges (cross-species homology, content-vs-tendency distinction, and t
 
 Originating public statement: https://x.com/born_brian85001/status/2092254278077517988
 
+## Reproduction
+
+The full process for accurately regenerating or extending this paper is encoded as a skill:
+
+- [`skills/working-paper-memory-inheritance/`](skills/working-paper-memory-inheritance/)
+
+It captures the thesis, ordered literature list (with DOIs), the three required stop-gap bridges, LaTeX production rules, GitHub publication steps, and archival fallbacks (archive.org / Google Scholar) for linked publications.
+
 ---
 
 This repository is the public, version-controlled home for these working papers. The LaTeX source is the canonical, archival form. Render the PDF with `pdflatex Memory_Inheritance_Working_Paper.tex` (requires a full TeX Live installation with TikZ, hyperref, etc.).
