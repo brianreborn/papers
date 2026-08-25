@@ -4,32 +4,46 @@ Working papers and scholarly notes by **Brian Fundakowski Feldman**, in collabor
 
 **License:** 4-Clause BSD (see [LICENSE](LICENSE)). Applied to all content in this repository.
 
-## Current papers
+---
 
-### A Working Theory of Memory-like Trait Inheritance
+## Quick links (start here)
+
+### Working paper (PDF)
+**[Download / view the PDF](https://github.com/brianreborn/papers/blob/main/memory-like-trait-inheritance/Memory_Inheritance_Working_Paper-2.pdf)**  
+*A Working Theory of Memory-like Trait Inheritance*
+
+### Prior public commentary (recovered Facebook archive)
+**[Prior Public Commentary on Merge, the Minimalist Program, and the Faculty of Language](https://github.com/brianreborn/papers/blob/main/memory-like-trait-inheritance/prior-merge-commentary.md)**  
+(2012–2021)
+
+---
+
+## A Working Theory of Memory-like Trait Inheritance
 **Based on a Longitudinal Reading of Peer-Reviewed Scientific Publications**
 
 - **Authors**: Brian Fundakowski Feldman, Grok/SuperGrok
 - **Date**: 25 August 2026
-- **Source**: [`memory-like-trait-inheritance/Memory_Inheritance_Working_Paper.tex`](memory-like-trait-inheritance/Memory_Inheritance_Working_Paper.tex)
+- **PDF**: [Memory_Inheritance_Working_Paper-2.pdf](memory-like-trait-inheritance/Memory_Inheritance_Working_Paper-2.pdf)
+- **LaTeX source**: [`Memory_Inheritance_Working_Paper.tex`](memory-like-trait-inheritance/Memory_Inheritance_Working_Paper.tex) *(canonical form; may need refresh)*
 
 **Thesis**  
 > Experiences can epigenetically pass behavioral tendencies to offspring.
 
-The paper assembles a causal chain from Chomsky’s generative linguistics through comparative episodic-like memory (Clayton & Dickinson), insect DNA-methylation plasticity (Herb et al. and related honeybee work), the core Dias & Ressler (2014) parental olfactory experience findings (germline CpG hypomethylation at Olfr151), mechanistic reviews (Dias et al. 2015; Fitz-James & Cavalli 2022), and broader phylogenetic support (Deshe et al. 2023 in *C. elegans* and related 2023 olfactory-receptor work).
+The paper assembles a causal chain from Chomsky’s generative linguistics and the Minimalist Program (including Merge) through comparative episodic-like memory, insect DNA-methylation plasticity, the core Dias & Ressler (2014) parental olfactory experience findings, mechanistic reviews, and broader phylogenetic support.
 
-Stop-gap bridges (cross-species homology, content-vs-tendency distinction, and the interface between innate computational architecture and epigenetic tuning) are explicitly labeled and treated as reasoned connectors rather than obstacles.
+Stop-gap bridges are explicitly labeled and treated as reasoned connectors rather than obstacles.
+
+**Prior art recovered from the author’s earlier public commentary** is collected here:  
+[prior-merge-commentary.md](memory-like-trait-inheritance/prior-merge-commentary.md)
 
 Originating public statement: https://x.com/born_brian85001/status/2092254278077517988
 
 ## Reproduction
 
-The full process for accurately regenerating or extending this paper is encoded as a skill:
+The full process for regenerating or extending this paper is encoded as a skill:
 
 - [`skills/working-paper-memory-inheritance/`](skills/working-paper-memory-inheritance/)
 
-It captures the thesis, ordered literature list (with DOIs), the three required stop-gap bridges, LaTeX production rules, GitHub publication steps, and archival fallbacks (archive.org / Google Scholar) for linked publications.
-
 ---
 
-This repository is the public, version-controlled home for these working papers. The LaTeX source is the canonical, archival form. Render the PDF with `pdflatex Memory_Inheritance_Working_Paper.tex` (requires a full TeX Live installation with TikZ, hyperref, etc.).
+This repository is the public, version-controlled home for these working papers. The LaTeX source is the preferred archival form. The PDF is provided for immediate reading.
