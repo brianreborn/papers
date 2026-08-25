@@ -1,13 +1,13 @@
 # papers
 
-Working papers and scholarly notes by **Brian Fundakowski Feldman**, in collaboration with Grok and SuperGrok (xAI).
+Working papers and scholarly notes by **Brian Fundakowski Feldman**, in collaboration with Grok/SuperGrok (xAI).
 
 ## Current papers
 
 ### A Working Theory of Memory-like Trait Inheritance
 **Based on a Longitudinal Reading of Peer-Reviewed Scientific Publications**
 
-- **Authors**: Brian Fundakowski Feldman, Grok, SuperGrok
+- **Authors**: Brian Fundakowski Feldman, Grok/SuperGrok
 - **Date**: 25 August 2026
 - **Source**: [`memory-like-trait-inheritance/Memory_Inheritance_Working_Paper.tex`](memory-like-trait-inheritance/Memory_Inheritance_Working_Paper.tex)
 
