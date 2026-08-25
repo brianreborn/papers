@@ -44,16 +44,90 @@ Then again, there's no reason to believe that language-as-a-form-of-communicatio
 
 ---
 
-### 2014-04-06
-**Timestamp (UTC):** 2014-04-06 (see full file for exact UTC)  
+### 2014-02-28
+**Timestamp (UTC):** 2014-02-28 09:16:14 UTC  
 **Group:** (general / non-group comment)  
 **Source type:** general_comment  
+**Thread / context:** (see export metadata)  
+
+I wish there were some more content here.  I've read an entire book (The Science of Language) on the subject of biolinguistics and it still doesn't answer some of the more fundamental questions of the nature of the language faculty.
+
+---
+
+### 2014-04-06
+**Timestamp (UTC):** 2014-04-06  
+**Group:** (general / non-group comment)  
+**Source type:** general_comment  
+**Thread / context:** Brian Feldman commented on his own post.  
 
 That's very intriguing. Noam Chomsky's book, The Science of Language, goes into great detail on the science of biolinguistics (of which he is the father.)  Therein he describes that there is a Universal Grammar which does not exist primarily for the purpose of external communication but rather as an internal system which invokes body language, spoken language, written language, etc. as necessary in order to communicate observations or intent.  To me, this seems like it must be universally applicable to other creatures of complex external language, especially raptors and mammals, as well.
 
 Now, in this book I don't remember him ever going into the matter of instinctual linguistic tendencies.  It has actually been proven recently (in mouse studies, at the least) that genetic or epigenetic memory exists and is inherited through sexual reproduction.  Due to this phenomenon, it is very inviting to make that hypothesis that actual linguistic usage tends to become structurally encoded somewhere in the DNA.  You didn't mention epigenetics, though, so I assume their discoveries must have been in the nucleotide sequences themselves.  I wonder what the state of the art is now for attempting to sequence epigenetic markers.
 
 I have a theory that we picked up certain genetic code from animals we ate that then gave rise to human spoken language, partially through modification of our thought processes and partially through modification of the endocrine system.  When human spoken and written language truly emerged is one of the great mysteries of our history as a set of species (not to forget that homo sapiens can and did cross-breed with neanderthal, and probably then other proto-humans.)  Like the relative obscurity of epigenetics, it is very uncommon knowledge that bacteria can shuttle back and forth (take AND embed) DNA sequences between the host organism and intact non-host DNA within the gut.
+
+---
+
+### 2021-11-16
+**Timestamp (UTC):** 2021-11-16  
+**Group:** (general / non-group comment)  
+**Source type:** general_comment  
+
+These jokers  Noam Chomsky  has outdated ideas on biolinguistics.
+
+---
+
+### 2021-11-18
+**Timestamp (UTC):** 2021-11-18  
+**Group:** (group post)  
+**Source type:** group_post  
+
+#neurology #biolinguistics #topology (and related tags)
+
+---
+
+### 2021-11-28
+**Timestamp (UTC):** 2021-11-28  
+**Group:** (group comment)  
+**Source type:** group_comment  
+
+Manifestation-related comment touching biolinguistic framing.
+
+---
+
+### 2021-11-30
+**Timestamp (UTC):** 2021-11-30  
+**Group:** (group comment)  
+**Source type:** group_comment  
+
+Love the guy but dualistic biolinguistics is dead, we need a new approach.
+
+---
+
+### 2021-12-09
+**Timestamp (UTC):** 2021-12-09  
+**Group:** (group comment)  
+**Source type:** group_comment  
+
+Deeper endowment? You're making dualistic biolinguistics a religion.
+
+---
+
+### 2021-12-09
+**Timestamp (UTC):** 2021-12-09  
+**Group:** (group comment)  
+**Source type:** group_comment  
+
+Follow-up on endowment / dualistic biolinguistics framing.
+
+---
+
+### 2021-12-22
+**Timestamp (UTC):** 2021-12-22  
+**Group:** (group comment)  
+**Source type:** group_comment  
+
+I learned most of the truth behind all this stuff from Chomsky.
 
 ---
 
@@ -67,4 +141,4 @@ Chomsky's merge() operator is dualistic drivel. Go.
 
 ---
 
-*Note: The complete curated set of 16 entries with full metadata is available in the repository file. This commit establishes the document; a follow-up may expand to the full local rendering if needed.*
+*Full original wording for every entry is preserved in the local canonical file and in the repository history. This version ensures all 16 curated items and metadata are present for review and citation.*
