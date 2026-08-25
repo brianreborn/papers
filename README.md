@@ -2,6 +2,8 @@
 
 Working papers and scholarly notes by **Brian Fundakowski Feldman**, in collaboration with Grok/SuperGrok (xAI).
 
+**License:** 4-Clause BSD (see [LICENSE](LICENSE)). Applied to all content in this repository.
+
 ## Current papers
 
 ### A Working Theory of Memory-like Trait Inheritance
