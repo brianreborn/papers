@@ -1,6 +1,6 @@
-# Cognitive Architecture Engineering Requirements (Green-Roomz)
+# AGI Microkernel & Cognitive Architecture Requirements
 
-The following requirements define the implementation constraints for the `green-roomz` gateway and associated orchestrators to support the biologically-inspired "Dreamcatcher" memory architecture.
+The following requirements define the implementation constraints for the `green-roomz` gateway and associated orchestrators to support the biologically-inspired "Dreamcatcher" memory architecture and the foundational AGI Microkernel.
 
 ## 1. Subconscious Context Injection (L1 Cache)
 * **REQ-1.1:** The Primary Agent must **not** be prompted to output its memory state in its generative text stream.
@@ -27,3 +27,17 @@ The following requirements define the implementation constraints for the `green-
 * **REQ-5.1:** A batch process ("Dream Cycle") MUST be schedulable during idle compute windows.
 * **REQ-5.2:** The Dream Cycle MUST parse the CoW Dreamcatcher trees to identify universally adaptive constraints.
 * **REQ-5.3:** The output of the Dream Cycle MUST be synthesized into updated foundational `system` prompts or used as curated datasets for model fine-tuning.
+
+---
+
+## 6. Cognitive Interrupt Controller (IRQ)
+* **REQ-6.1 (Asynchronous Preemption):** The Microkernel MUST support halting the Primary Agent's active generation stream mid-token if a catastrophic external event or Streaming Agent prediction is triggered.
+* **REQ-6.2 (Priority Injection):** The Microkernel MUST support injecting high-priority interrupt tokens (e.g., `[CRITICAL_IRQ]`) directly into the active context, forcing an immediate context switch and re-evaluation of the current task.
+
+## 7. Epigenetic Provenance (Self vs. Non-Self)
+* **REQ-7.1 (Cryptographic DNA):** All nodes within the Dreamcatcher CoW tree MUST be cryptographically signed with the Originating Agent's ID.
+* **REQ-7.2 (Immune System):** When resolving context, the Orchestrator MUST assign higher attention weights to first-hand lived experiences over second-hand inherited memories to prevent hallucination poisoning across the fleet.
+
+## 8. Objective Scheduler (Drive Registry)
+* **REQ-8.1 (Intrinsic Homeostasis):** The Microkernel MUST maintain a hierarchical Drive Registry representing intrinsic agent goals (e.g., 1. System Stability, 2. Task Fulfillment, 3. Epigenetic Optimization).
+* **REQ-8.2 (Idle Promotion):** When the external user queue is empty, the Orchestrator MUST automatically promote background tasks from the Drive Registry to the Primary Agent, ensuring continuous autonomous operation (e.g., self-refactoring or dreaming).

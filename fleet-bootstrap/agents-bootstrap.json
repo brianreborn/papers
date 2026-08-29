@@ -1,0 +1,29 @@
+﻿{
+    "maxRetriesPerWindow":  3,
+    "windowMinutes":  10,
+    "cooldownSeconds":  60,
+    "agents":  [
+                   {
+                       "name":  "tool-router",
+                       "script":  "C:\\LocalAI\\native-engines.ps1",
+                       "args":  [
+
+                                ],
+                       "port":  8081,
+                       "tokenEnv":  "LLAMA_API_KEY",
+                       "tokenFile":  "C:\\fleet\\tokens\\%HOSTNAME%.token"
+                   },
+                   {
+                       "name":  "gateway",
+                       "script":  "C:\\LocalAI\\android-pack\\grz-termux\\bin\\green-roomz.mjs",
+                       "cwd":  "C:\\LocalAI\\android-pack\\grz-termux",
+                       "node":  true,
+                       "args":  [
+                                    "serve"
+                                ],
+                       "port":  8080,
+                       "tokenEnv":  "GATEWAY_API_KEY",
+                       "tokenFile":  "C:\\fleet\\tokens\\%HOSTNAME%.token"
+                   }
+               ]
+}
