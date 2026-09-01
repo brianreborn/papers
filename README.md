@@ -12,7 +12,7 @@ Working papers and scholarly notes by **Brian Fundakowski Feldman**, in collabor
 - **Memory-like trait inheritance (LaTeX):** [Memory_Inheritance_Working_Paper.tex](memory-like-trait-inheritance/Memory_Inheritance_Working_Paper.tex)
 - **Memory-like trait inheritance (PDF):** [Memory_Inheritance_Working_Paper.pdf](memory-like-trait-inheritance/Memory_Inheritance_Working_Paper.pdf) *(upload the current build if missing)*
 - **Continuum aerosol computing (LaTeX):** [Continuum_Aerosol_Computing_Working_Paper.tex](continuum-aerosol-computing/Continuum_Aerosol_Computing_Working_Paper.tex)
-- **Continuum aerosol computing (PDF):** [Continuum_Aerosol_Computing_Working_Paper.pdf](continuum-aerosol-computing/Continuum_Aerosol_Computing_Working_Paper.pdf) *(upload the current build if missing)*
+- **Continuum aerosol computing (PDF):** [Continuum_Aerosol_Computing_Working_Paper.pdf](continuum-aerosol-computing/Continuum_Aerosol_Computing_Working_Paper.pdf)
 
 ### Prior public commentary (recovered Facebook archive)
 **[Prior Public Commentary on Merge, the Minimalist Program, and the Faculty of Language](memory-like-trait-inheritance/prior-merge-commentary.md)**  
