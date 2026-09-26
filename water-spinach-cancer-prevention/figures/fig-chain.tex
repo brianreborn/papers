@@ -1,0 +1,31 @@
+\begin{tikzpicture}[font=\sffamily\small, node distance=4.5mm,
+  nd/.style={text width=8.3cm, align=left, inner sep=5pt, minimum height=1.25cm},
+  ch/.style={draw=red!60!black, line width=0.7pt, fill=red!4, rounded corners=2pt, text width=3.5cm, align=left, font=\sffamily\scriptsize, inner sep=3pt},
+  ic/.style={circle, draw=#1, line width=1.3pt, fill=white, minimum size=1.15cm}]
+\node[nd, est] (e1) {\textbf{\color{teal!80!black}E1 \;What is in the leaf.} Flavonoid glycosides, incl.\ a (tentatively identified) taxifolin 3,7-diglucoside. {\scriptsize\color{black!60}Prasad 2005; Lawal 2016; Saikia 2023}};
+\node[nd, est, below=of e1] (e2) {\textbf{\color{teal!80!black}E2 \;Sugars cut, core absorbed.} Human LPH and CBG cut many flavonoid glucosides; glucosides absorb well; blood reaches low $\mu$M. {\scriptsize\color{black!60}Hollman 1995; Day 1998, 2000; Manach 2005}};
+\node[nd, prop, below=of e2] (sg1) {\textbf{\color{orange!85!black}SG1 \;Dose / Bioavailability.} Years of small doses, not one big dose, are the relevant scale.};
+\node[nd, mod, below=of sg1] (e3) {\textbf{\color{navy}E3 \;Core is active in models.} Taxifolin and quercetin slow cancer cells; taxifolin prevents tumours in mice. {\scriptsize\color{black!60}Lee 2007; Oi 2012; Manigandan 2015; Wang 2020}};
+\node[nd, prop, below=of e3] (sg2) {\textbf{\color{orange!85!black}SG2 \;Cross-species / model homology.} Cell and rodent results carry over to people through shared enzymes and targets.};
+\node[nd, est, below=of sg2] (e4) {\textbf{\color{teal!80!black}E4 \;People who eat more flavonoids.} Modestly lower cancer incidence or death in some large cohorts (associations only). {\scriptsize\color{black!60}Knekt 2002; Aune 2017; Bondonno 2019; Parmenter 2025}};
+\node[nd, prop, below=of e4] (sg3) {\textbf{\color{orange!85!black}SG3 \;Prevention vs Cure.} A small lowering of risk over years, not a treatment or cure.};
+\node[text width=8.3cm, align=center, inner sep=6pt, draw=teal, line width=2.2pt, fill=teallight, rounded corners=4pt, below=of sg3] (th) {\textbf{\color{teal!80!black}WORKING THESIS}\\ Regular dietary intake of water spinach (\emph{Ipomoea aquatica}) plausibly contributes a modest cancer-preventive effect via its flavonoid glycosides.};
+\foreach \a/\b/\s in {e1/e2/aest,e2/sg1/aprop,sg1/e3/aprop,e3/sg2/aprop,sg2/e4/aprop,e4/sg3/aprop,sg3/th/aprop}{\draw[\s] (\a) -- (\b);}
+% icons
+\node[ic=teal, left=5mm of e1] (i1) {}; \pic at ($(i1)+(0,-0.45)$) {leaf};
+\node[ic=teal, left=5mm of e2] (i2) {}; \pic[scale=0.75] at (i2) {gut};
+\node[ic=orange, left=5mm of sg1] (i3) {}; \node[font=\sffamily\bfseries\small, text=orange!85!black] at (i3) {dose};
+\node[ic=navy, left=5mm of e3] (i4) {}; \pic[scale=0.7] at ($(i4)+(-0.22,0.05)$) {flask}; \pic[scale=0.45] at ($(i4)+(0.28,-0.18)$) {mouse};
+\node[ic=orange, left=5mm of sg2] (i5) {}; \pic[scale=0.45] at ($(i5)+(-0.2,0)$) {mouse}; \node[font=\sffamily\bfseries, text=orange!85!black] at ($(i5)+(0.28,0)$) {$\rightarrow$};
+\node[ic=teal, left=5mm of e4] (i6) {}; \pic[scale=0.8] at ($(i6)+(0,-0.2)$) {people};
+\node[ic=orange, left=5mm of sg3] (i7) {}; \node[font=\sffamily\bfseries\scriptsize, text=orange!85!black, align=center] at (i7) {risk\\$\downarrow$};
+\node[ic=teal, left=5mm of th] (i8) {}; \pic[scale=0.8] at ($(i8)+(0,-0.45)$) {leaf};
+% challenges
+\node[ch, right=5mm of e1] {\textbf{Challenge:} one cultivar survey did not find this compound (Lawal 2016).};
+\node[ch, right=5mm of e2] {\textbf{Challenge:} the 3-O sugar is reported as $\alpha$; oral taxifolin F in rats is 0.5\% (Yang 2016).};
+\node[ch, right=5mm of e3] {\textbf{Challenge:} lab doses are 10--600 $\mu$M; the diglucoside itself is weak and unselective (Prasad 2005b).};
+\node[ch, right=5mm of e4] {\textbf{Challenge:} null cohorts and a null Mendelian randomisation (Wang 2009; Takachi 2008; Wei 2024).};
+\node[ch, right=5mm of th] {\textbf{Challenge:} no study of water spinach and cancer in people yet.};
+% exclusion
+\node[tox, text width=15.2cm, align=left, inner sep=5pt, font=\sffamily\small, below=7mm of th.south, anchor=north, xshift=0.6cm] (ex) {\textbf{\color{red!60!black}Outside the chain:} ornamental morning-glory \textbf{seeds} (LSA; toxic, not food); isolated cytotoxins (ipomoeassins, 4-ipomeanol, which failed in a phase~I trial); concentrated extracts. {\scriptsize\color{black!60}Juszczak 2013; Cao 2007; Kasturi 1998}};
+\end{tikzpicture}

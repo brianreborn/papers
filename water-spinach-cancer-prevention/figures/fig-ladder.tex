@@ -1,0 +1,39 @@
+\begin{tikzpicture}[font=\sffamily, x=1cm, y=1cm]
+\newcommand{\full}[1]{\fill[#1] (0,0) circle (0.22);}
+\newcommand{\half}[1]{\draw[#1, line width=1.2pt] (0,0) circle (0.22); \fill[#1] (0,-0.22) arc[start angle=-90,end angle=90,radius=0.22] -- cycle;}
+\newcommand{\none}[1]{\draw[#1, line width=1.2pt] (0,0) circle (0.22);}
+% ladder rails and rungs
+\draw[navy, line width=4pt] (-1.1,-0.6) -- (-1.1,11.3); \draw[navy, line width=4pt] (1.1,-0.6) -- (1.1,11.3);
+\foreach \i/\t/\ic in {0/{Cells in\\ a dish}/flask,1/{Animals}/mouse,2/{Human\\ absorption \&\\ biomarkers}/people,3/{Human\\ population\\ studies}/people,4/{Human\\ randomised\\ trials}/people}{
+  \draw[navy, line width=3pt] (-1.1,\i*2.3+0.4) -- (1.1,\i*2.3+0.4);
+  \node[font=\sffamily\bfseries\footnotesize, align=center, text=navy, fill=white, inner sep=1.5pt] at (0,\i*2.3+1.15) {\t};
+}
+% column headers
+\node[font=\sffamily\bfseries, text=teal!80!black] at (-4.9,12.0) {Water spinach itself};
+\node[font=\sffamily\bfseries, text=navy] at (4.9,12.0) {Related compounds and foods};
+\node[font=\sffamily\bfseries\small, text=black!60] at (0,12.0) {rung};
+% cell macro: x-side (L/R), rung index, marker, colour, text
+\newcommand{\cellL}[3]{\begin{scope}[shift={(-2.0,#1*2.3+0.8)}]#2\end{scope}\node[anchor=east, text width=5.6cm, align=right, font=\sffamily\small] at (-2.4,#1*2.3+0.8) {#3};}
+\newcommand{\cellR}[3]{\begin{scope}[shift={(2.0,#1*2.3+0.8)}]#2\end{scope}\node[anchor=west, text width=5.6cm, align=left, font=\sffamily\small] at (2.4,#1*2.3+0.8) {#3};}
+\cellL{0}{\full{teal}}{Weak activity, only at high doses\\{\scriptsize\color{black!60}Prasad 2005b; Fan 2014; Sasikala 2022; Saikia 2023}}
+\cellR{0}{\full{navy}}{Many positive cell studies\\{\scriptsize\color{black!60}Zheng 2012; Lee 2007; Wang 2020}}
+\cellL{1}{\none{teal}}{No cancer study found\\{\scriptsize\color{black!60}(one blood-sugar study: Malalavidhane 2003)}}
+\cellR{1}{\full{navy}}{Taxifolin prevents tumours in mice; sweet-potato greens slow xenografts\\{\scriptsize\color{black!60}Oi 2012; Manigandan 2015; Karna 2011}}
+\cellL{2}{\half{teal}}{Regular eaters had higher blood antioxidant capacity; no absorption study\\{\scriptsize\color{black!60}Woo 1997}}
+\cellR{2}{\full{navy}}{Quercetin glucosides absorbed; blood levels sub-$\mu$M to low $\mu$M\\{\scriptsize\color{black!60}Hollman 1995; Manach 2005; Egert 2008}}
+\cellL{3}{\half{teal}}{Indirect only: grouped with other greens, pointing the wrong way; a sister leaf linked to less lung cancer\\{\scriptsize\color{black!60}Hernandez 2004; Jin 2007}}
+\cellR{3}{\half{navy}}{Mixed: lower cancer death with more flavonoids, but null cohorts too\\{\scriptsize\color{black!60}Knekt 2002; Bondonno 2019 vs Wang 2009; Takachi 2008}}
+\cellL{4}{\none{teal}}{None}
+\cellR{4}{\none{navy}}{None for flavonoids and cancer; antioxidant pills (\,$\beta$-carotene) caused harm\\{\scriptsize\color{black!60}ATBC 1994; Omenn 1996}}
+% you-are-here
+\node[prop, font=\sffamily\bfseries\small, text=orange!85!black, align=center] (here) at (-4.3,-1.05) {WATER SPINACH IS HERE};
+\draw[aprop, solid] (here.east) -| (-2.0,0.5);
+% strength arrow
+\draw[-{Stealth[length=4mm]}, line width=2.5pt, black!40] (10.0,-0.4) -- (10.0,11.2) node[midway, rotate=90, above, font=\sffamily\bfseries\small, text=black!60] {stronger evidence for cause and effect};
+% key
+\begin{scope}[shift={(2.2,-1.1)}]
+\full{black!60} \node[anchor=west, font=\sffamily\scriptsize] at (0.3,0) {evidence exists};
+\begin{scope}[shift={(2.8,0)}]\half{black!60}\end{scope} \node[anchor=west, font=\sffamily\scriptsize] at (3.1,0) {partial/indirect};
+\begin{scope}[shift={(5.6,0)}]\none{black!60}\end{scope} \node[anchor=west, font=\sffamily\scriptsize] at (5.9,0) {none};
+\end{scope}
+\end{tikzpicture}

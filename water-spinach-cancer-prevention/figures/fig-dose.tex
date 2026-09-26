@@ -1,0 +1,36 @@
+\begin{tikzpicture}[font=\sffamily, x=1.9cm, y=1cm]
+% x = log10(concentration in micromolar) + 2 ; 0.01 uM -> 0, 1000 uM -> 5
+\pgfmathsetmacro{\lg}{1}
+\newcommand{\X}[1]{{log10(#1)+2}}
+% achievable band 0.1-10 uM
+\fill[teallight] ({log10(0.1)+2},0.45) rectangle ({log10(10)+2},-11.9);
+\node[font=\sffamily\bfseries\small, text=teal!80!black, align=center] at ({log10(1)+2},0.75) {what a flavonoid-rich meal gives in blood};
+% grid & axis
+\foreach \v/\t in {0.01/0.01,0.1/0.1,1/1,10/10,100/100,1000/1000}{
+  \draw[black!25] ({log10(\v)+2},0.4) -- ({log10(\v)+2},-11.9);
+  \node[font=\sffamily\small, anchor=north] at ({log10(\v)+2},-11.95) {\t};}
+\draw[line width=1pt, black!70] (0,-11.9) -- (5,-11.9);
+\node[font=\sffamily\small\bfseries, anchor=north] at (2.5,-12.45) {concentration, $\mu$mol/L (log scale)};
+% row macro: y, lo, hi, colour, label, source
+\newcommand{\rng}[6]{%
+  \draw[line width=6pt, #4, line cap=round] ({log10(#2)+2},#1) -- ({log10(#3)+2},#1);
+  \node[anchor=east, font=\sffamily\small, text width=5.3cm, align=right] at (-0.12,#1) {#5\\[-1pt]{\scriptsize\color{black!60}#6}};}
+\newcommand{\pt}[5]{%
+  \fill[#3] ({log10(#2)+2},#1) circle (0.13);
+  \node[anchor=east, font=\sffamily\small, text width=5.3cm, align=right] at (-0.12,#1) {#4\\[-1pt]{\scriptsize\color{black!60}#5}};}
+\node[anchor=west, font=\sffamily\bfseries, text=orange!85!black] at (-2.85,0.5) {IN THE LAB DISH};
+\rng{-1.0}{248}{627}{orange}{Water-spinach diglucoside: cell kill (CTC$_{50}$)}{Prasad 2005b via Meira 2012 ($\mu$g/mL assumed)}
+\pt{-2.2}{132}{orange}{Same compound, antioxidant EC$_{50}$}{Prasad 2005 (83 $\mu$g/mL)}
+\rng{-3.4}{25}{100}{orange}{Taxifolin, lung-cancer stemness}{Wang 2020}
+\pt{-4.6}{60}{orange}{Taxifolin, switches on detox genes}{Lee 2007}
+\rng{-5.8}{10}{120}{orange}{Quercetin, apoptosis in 9 lines}{Hashemzaei 2017}
+\rng{-7.0}{1.0}{1.4}{orange}{Quercetin, A549 IC$_{50}$ (the exception)}{Zheng 2012}
+\node[anchor=west, font=\sffamily\bfseries, text=teal!80!black] at (-2.85,-7.9) {IN THE HUMAN BODY};
+\rng{-8.8}{0.1}{10}{teal}{Plasma after a polyphenol-rich meal}{Kroon 2004}
+\draw[line width=6pt, teal, line cap=round] ({log10(0.012)+2},-10.0) -- ({log10(4)+2},-10.0);
+\draw[teal, line width=1.5pt, -{Stealth[length=3mm]}] ({log10(0.02)+2},-10.0) -- (-0.02,-10.0);
+\node[anchor=east, font=\sffamily\small, text width=5.3cm, align=right] at (-0.12,-10.0) {All plasma metabolites after $\sim$50 mg\\[-1pt]{\scriptsize\color{black!60}Manach 2005 (97 studies)}};
+\pt{-11.2}{0.431}{teal}{Quercetin peak, 150 mg/day supplement}{Egert 2008 (median 0.43)}
+% gap arrow
+\draw[{Stealth[length=3.5mm]}-{Stealth[length=3.5mm]}, line width=1.8pt, navy] ({log10(4)+2},-7.9) -- ({log10(248)+2},-7.9) node[midway, above, font=\sffamily\bfseries\small, text=navy] {SG1 gap: about 60$\times$ or more};
+\end{tikzpicture}

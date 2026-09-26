@@ -1,0 +1,32 @@
+\begin{tikzpicture}[font=\sffamily\small, x=1cm, y=1cm,
+  st/.style={text width=6.3cm, align=left, inner sep=4pt, font=\sffamily\small},
+  arm/.style={text width=4.3cm, align=left, inner sep=3pt, font=\sffamily\small, rounded corners=2pt, draw=#1!80!black, line width=1pt, fill=#1!12}]
+% ===== HUMAN ARM =====
+\node[font=\sffamily\bfseries\large, text=teal!80!black] at (-4.0,0.4) {HUMAN ARM};
+\pic[scale=1.1] at (-6.5,0.25) {people};
+\node[st, est] (h0) at (-4.0,-1.0) {\textbf{Step 0 \;Bench:} confirm the compound by NMR; incubate it with LPH, CBG and stool bacteria.\hfill{\scriptsize\color{orange!85!black}tests SG1, M1--M3}};
+\node[st, est, below=5mm of h0] (h1) {\textbf{Step 1 \;Meal study:} one cooked portion, then taxifolin and its conjugates in blood and urine.\hfill{\scriptsize\color{orange!85!black}tests SG1, M4--M5}};
+\node[st, est, below=5mm of h1] (h2) {\textbf{Step 2 \;Cross-sectional survey:} adults where water spinach is common; how often eaten, plus biomarkers; about 24{,}000 to 43{,}000 people (assumptions in text).\hfill{\scriptsize\color{orange!85!black}tests E4, SG3}};
+\node[st, est, below=5mm of h2] (h3) {\textbf{Step 3 \;Follow-on:} cohort or nested case-control, new cancers.\hfill{\scriptsize\color{orange!85!black}tests SG3}};
+\foreach \a/\b in {h0/h1,h1/h2,h2/h3}{\draw[aest] (\a) -- (\b);}
+% ===== ANIMAL ARM =====
+\node[font=\sffamily\bfseries\large, text=navy] at (4.8,0.4) {ANIMAL ARM};
+\pic[scale=1.2] at (7.5,0.3) {mouse};
+\node[st, mod, text width=6.6cm] (a0) at (4.8,-1.0) {\textbf{Randomise} standard-chow mice (never fed such greens) by block; both sexes; coded diets.};
+\node[arm=gray, below=4mm of a0.south west, anchor=north west] (d1) {\textbf{A \;Control chow} (calories and fibre matched)};
+\node[arm=teal, below=1.5mm of d1] (d2) {\textbf{B \;Low leaf:} 1\% w/w freeze-dried};
+\node[arm=teal, below=1.5mm of d2] (d3) {\textbf{C \;High leaf:} 5\% w/w, market-type source};
+\node[arm=teal, below=1.5mm of d3] (d4) {\textbf{D \;High leaf, clean-grown} (screened for As, Cd, Pb, Hg, nitrate)};
+\node[arm=orange, below=1.5mm of d4] (d5) {\textbf{E \;Taxifolin-matched} (pure, same molar dose as C)};
+\draw[amod] (a0.south -| d1.north) -- (d1.north);
+\node[mod, text width=1.8cm, align=center, font=\sffamily\small, anchor=west] (aom) at ($(d3.east)+(0.35,0)$) {\textbf{AOM / DSS} colon model\\{\scriptsize Neufert 2007}};
+\foreach \d in {d1,d2,d3,d4,d5}{\draw[navy, line width=0.9pt, -{Stealth}] (\d.east) -- (aom.west);}
+\node[st, mod, text width=6.6cm, anchor=north west] (ep) at ($(d5.south west)+(0,-0.45)$) {\textbf{Endpoints} (blinded): tumour incidence, number, size, time to first tumour, histology; blood/urine taxifolin metabolites (\textcolor{orange!85!black}{SG1}); stool microbiome and $\alpha$-sugar cleavage (\textcolor{orange!85!black}{M3}).};
+\draw[amod] (aom.south) -- (aom.south |- ep.north);
+\node[st, prop, text width=6.6cm, below=4mm of ep] (sg2) {\textbf{Still needs SG2:} a mouse result must be carried to people by the human arm.};
+\draw[aprop] (ep) -- (sg2);
+% gate from bench to animals
+\draw[aprop] (h0.east) -- node[above, font=\sffamily\scriptsize, text=orange!85!black, align=center] {go only if\\ taxifolin is freed} (a0.west);
+\draw[aprop] (sg2.west) -| ($(h3.east)+(0.4,0)$) -- (h3.east);
+\node[font=\sffamily\scriptsize, text=black!60, anchor=north east] at (sg2.south east) {animal ethics approval, 3Rs, ARRIVE 2.0 reporting};
+\end{tikzpicture}

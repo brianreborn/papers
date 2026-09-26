@@ -1,0 +1,18 @@
+\newcommand{\edible}{\tikz[baseline=-0.6ex]{\node[circle, fill=teal, text=white, inner sep=1.2pt, font=\sffamily\bfseries\small] {\ding{51}};}}
+\newcommand{\toxic}{\tikz[baseline=-0.6ex]{\node[regular polygon, regular polygon sides=3, fill=red!75!black, text=white, inner sep=0.6pt, font=\sffamily\bfseries\scriptsize] {!};}}
+\newcommand{\notfood}{\tikz[baseline=-0.6ex]{\node[circle, fill=black!35, text=white, inner sep=1.6pt, font=\sffamily\bfseries\small] {--};}}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c >{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}X@{}}
+\toprule
+ & \textbf{Species} & \textbf{Common name} & \textbf{What people use it for, and its place in this paper}\\
+\midrule
+\rowcolor{teallight}\edible & \emph{I.~aquatica} & Water spinach, kangkung, ong choy & Leaves and stems eaten as an everyday green across Asia~\cite{thu2004}. \textbf{The subject of the thesis.} Buy from clean water and cook it (Section~\ref{sec:safety}).\\
+\edible & \emph{I.~batatas} & Sweet potato & Roots and leaves (greens) eaten~\cite{karna2011,jin2007}. Same genus; supporting evidence only.\\
+\notfood & \emph{I.~alba} & Moonflower & Ornamental vine. Not evaluated as food here.\\
+\notfood & \emph{I.~quamoclit} & Cypress vine & Ornamental vine. Not evaluated as food here.\\
+\notfood & \emph{I.~pes-caprae} & Beach morning glory & Coastal plant with traditional medicinal uses~\cite{meira2012}. Not evaluated as food here.\\
+\notfood & \emph{I.~arborescens} & Tree morning glory & Ornamental tree or shrub. Not evaluated as food here.\\
+\rowcolor{red!6}\toxic & \emph{I.~tricolor}, \emph{I.~violacea}, \emph{I.~purpurea} (seeds) & Garden morning glory, e.g.\ ``Heavenly Blue'' & Seeds contain d-lysergamide (LSA) and are taken as a drug, with serious adverse effects~\cite{juszczak2013}. \textbf{Toxic; not food.}\\
+\bottomrule
+\multicolumn{4}{@{}l}{\small \edible\ eaten as food \qquad \notfood\ not a food in this paper (no claim about safety) \qquad \toxic\ toxic, not food}\\
+\end{tabularx}

@@ -1,0 +1,38 @@
+\begin{tikzpicture}[font=\sffamily, x=1cm, y=1cm]
+% type colours: orange = seeds / safety-relevant, teal = plants & food, navy = cancer / research claim
+\def\rowh{0.98}
+\draw[navy!60, line width=3pt] (0,0.6) -- (0,-4*\rowh+0.3);
+\draw[navy!60, line width=3pt] (0,-4*\rowh-0.55) -- (0,-15*\rowh+0.2);
+% gap marker
+\draw[navy!60, line width=1.2pt, dotted] (0,-4*\rowh+0.3) -- (0,-4*\rowh-0.55);
+\node[font=\sffamily\itshape\small, text=black!60, anchor=west] at (0.35,-4*\rowh-0.12) {May 2024 -- mid-July 2026: no related posts surfaced in our searches};
+\newcommand{\ev}[5]{% row, date, colour, short label, handle
+  \node[circle, fill=#3, draw=white, line width=1.2pt, minimum size=5.5mm] at (0,-#1*\rowh) {};
+  \node[anchor=east, font=\sffamily\bfseries\small, text=#3!80!black] at (-0.45,-#1*\rowh) {#2};
+  \node[anchor=west, text width=11.2cm, font=\sffamily\small] at (0.45,-#1*\rowh) {#4 {\color{black!55}\scriptsize #5}};}
+\ev{0}{4 Dec 2023}{orange}{Posts a photo of his morning-glory seeds, ``mostly the heavenly blues''}{@born\_brian85001}
+\ev{1}{5 Dec 2023}{teal}{Suggests field bindweed, ``a tiny morning glory'', in a flower thread}{@born\_brian85001}
+\ev{2}{26 Feb 2024}{orange}{Disputes that morning-glory seeds are ``highly toxic''}{@born\_brian85001}
+\ev{3}{20 Apr 2024}{teal}{Says morning-glory flowers and seeds ``have some good uses''}{@born\_brian85001}
+\ev{5}{22 Jul 2026}{teal}{Photographs neighbourhood morning glories; links \emph{I.~tricolor} and \emph{I.~batatas}}{@born\_brian85001}
+\node[circle, fill=navy, draw=orange, line width=2pt, minimum size=8mm] at (0,-6*\rowh) {};
+\node[anchor=east, font=\sffamily\bfseries\small, text=navy] at (-0.45,-6*\rowh) {24 Jul 2026};
+\node[anchor=west, text width=11.2cm, font=\sffamily\small] at (0.45,-6*\rowh) {\textbf{Originating post:} morning glory ``can cure cancer?''; quotes the 2005 compound {\color{black!55}\scriptsize @born\_brian85001}};
+\ev{7}{25 Jul 2026}{navy}{Water spinach is ``a very healthy food''; widens the search to sweet potato relatives}{@born\_brian85001}
+\ev{8}{26 Jul 2026}{teal}{Church hike: field-bindweed morning glories in bloom}{@born\_brian85001}
+\ev{9}{28 Jul 2026}{teal}{``If it has beautiful flowers, it probably has powerful medicinal uses''}{@born\_brian85001}
+\ev{10}{15 Aug 2026}{navy}{Lists ``water spinach cures cancer'' among plant claims seen so far}{@born\_brian85001}
+\ev{11}{18 Aug 2026}{orange}{``don't forget the humble Morning Glory'': some varieties hold lysergamides}{@born\_brian85001}
+\ev{12}{22 Sep 2026}{teal}{Morning-glory tattoos, ``from the last several years''}{@BrianReborn\_alt}
+\node[circle, fill=navy, draw=orange, line width=2pt, minimum size=8mm] at (0,-13*\rowh) {};
+\node[anchor=east, font=\sffamily\bfseries\small, text=navy] at (-0.45,-13*\rowh) {24 Sep 2026};
+\node[anchor=west, text width=11.2cm, font=\sffamily\small] at (0.45,-13*\rowh) {\textbf{Thread with Grok:} compound, enzymes, other mammals, ``preventative effects'' {\color{black!55}\scriptsize @BrianReborn\_alt, @born\_brian85001}};
+\node[rectangle, rounded corners=2pt, fill=teal, minimum size=6mm] at (0,-14*\rowh) {};
+\node[anchor=east, font=\sffamily\bfseries\small, text=teal!80!black] at (-0.45,-14*\rowh) {26 Sep 2026};
+\node[anchor=west, text width=11.2cm, font=\sffamily\small] at (0.45,-14*\rowh) {\textbf{This working paper}};
+% legend
+\begin{scope}[shift={(-2.6,-15.4*\rowh)}]
+\foreach \c/\t [count=\i] in {orange/Seeds and safety,teal/Plants and food,navy/Cancer and research claims}{
+  \node[circle, fill=\c, minimum size=4mm] at (\i*4.3-4.3,0) {}; \node[anchor=west, font=\sffamily\small] at (\i*4.3-4.0,0) {\t};}
+\end{scope}
+\end{tikzpicture}

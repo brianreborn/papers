@@ -1,0 +1,51 @@
+\begin{tikzpicture}[scale=1.25, font=\sffamily, bond/.style={line width=1.2pt, black!85}]
+% ring A centre (0,0), ring C centre (1.732,0), pointy-top hexagons, side 1
+\coordinate (C8) at (0,1); \coordinate (C8a) at (0.866,0.5); \coordinate (C4a) at (0.866,-0.5);
+\coordinate (C5) at (0,-1); \coordinate (C6) at (-0.866,-0.5); \coordinate (C7) at (-0.866,0.5);
+\coordinate (O1) at (1.732,1); \coordinate (C2) at (2.598,0.5); \coordinate (C3) at (2.598,-0.5); \coordinate (C4) at (1.732,-1);
+\coordinate (C1p) at (3.464,1); \coordinate (C2p) at (3.464,2); \coordinate (C3p) at (4.33,2.5);
+\coordinate (C4p) at (5.196,2); \coordinate (C5p) at (5.196,1); \coordinate (C6p) at (4.33,0.5);
+% taxifolin core highlight
+\fill[navylight, rounded corners=14pt] (-1.35,-1.75) -- (-1.35,1.35) -- (3.1,1.35) -- (3.1,3.2) -- (5.95,3.2) -- (5.95,0.0) -- (3.2,0.0) -- (3.2,-1.75) -- cycle;
+\node[navy, font=\sffamily\bfseries\small, anchor=south west] at (-1.3,1.4) {taxifolin (dihydroquercetin) core};
+% ring bonds
+\draw[bond] (C8)--(C8a)--(C4a)--(C5)--(C6)--(C7)--cycle;
+\draw[bond] (C8a)--(O1)--(C2)--(C3)--(C4)--(C4a);
+\draw[bond] (C2)--(C1p);
+\draw[bond] (C1p)--(C2p)--(C3p)--(C4p)--(C5p)--(C6p)--cycle;
+% aromatic inner double bonds
+\draw[bond] ($(C4a)!0.18!(C8a)!0.14!-90:(C8a)$) -- ($(C8a)!0.18!(C4a)!0.14!90:(C4a)$);
+\draw[bond] ($(C8)!0.18!(C7)!0.14!-90:(C7)$) -- ($(C7)!0.18!(C8)!0.14!90:(C8)$);
+\draw[bond] ($(C6)!0.18!(C5)!0.14!-90:(C5)$) -- ($(C5)!0.18!(C6)!0.14!90:(C6)$);
+\draw[bond] ($(C1p)!0.18!(C2p)!0.14!90:(C2p)$) -- ($(C2p)!0.18!(C1p)!0.14!-90:(C1p)$);
+\draw[bond] ($(C3p)!0.18!(C4p)!0.14!-90:(C4p)$) -- ($(C4p)!0.18!(C3p)!0.14!90:(C3p)$);
+\draw[bond] ($(C5p)!0.18!(C6p)!0.14!-90:(C6p)$) -- ($(C6p)!0.18!(C5p)!0.14!90:(C5p)$);
+% ring O label
+\node[fill=navylight, inner sep=1pt, font=\sffamily\bfseries] at (O1) {O};
+% C4 carbonyl, 5-OH, 3',4'-OH
+\draw[bond] (C4) -- ++(0,-0.75) coordinate (O4); \draw[bond] ($(C4)+(0.1,0)$) -- ++(0,-0.75);
+\node[below, inner sep=1pt, font=\sffamily\bfseries] at (O4) {O};
+\draw[bond] (C5) -- ++(0,-0.6) node[below, inner sep=1pt, font=\sffamily\bfseries] {OH};
+\draw[bond] (C3p) -- ++(0,0.55) node[above, inner sep=1pt, font=\sffamily\bfseries] {OH};
+\draw[bond] (C4p) -- ++(0.52,0.3) node[right, inner sep=1pt, font=\sffamily\bfseries] {OH};
+% single C2-C3 bond callout
+\draw[orange!80!black, line width=0.8pt, -{Stealth}] (3.4,-0.12) node[right, font=\sffamily\scriptsize, align=left, text=black] {C2--C3 single bond:\\the only difference from quercetin} -- ($(C2)!0.5!(C3)+(0.08,0)$);
+% 7-O-beta glucose (teal)
+\draw[teal, line width=2pt] (C7) -- ++(-0.75,0.43) coordinate (O7);
+\node[teal, font=\sffamily\bfseries] at ($(O7)+(-0.05,0.18)$) {O};
+\draw[teal, line width=2pt] ($(O7)+(-0.2,0.05)$) -- ++(-0.7,0) coordinate (G7);
+\node[regular polygon, regular polygon sides=6, minimum size=12mm, draw=teal!70!black, fill=teal, line width=1pt, text=white, font=\sffamily\bfseries\small] (g7) at ($(G7)+(-0.45,0)$) {Glc};
+\node[teal!70!black, font=\sffamily\bfseries\small] at ($(g7.north)+(0,0.25)$) {7-O-$\beta$};
+\node[font=\Large, teal!60!black, rotate=-90] at ($(O7)+(-0.55,-0.25)$) {\cut};
+% 3-O-alpha glucose (orange)
+\draw[orange, line width=2pt] (C3) -- ++(0.62,-0.45) coordinate (O3);
+\node[orange!90!black, font=\sffamily\bfseries] at ($(O3)+(0.12,-0.1)$) {O};
+\draw[orange, line width=2pt] ($(O3)+(0.3,-0.2)$) -- ++(0.55,-0.3) coordinate (G3);
+\node[regular polygon, regular polygon sides=6, minimum size=12mm, draw=orange!70!black, fill=orange, line width=1pt, text=white, font=\sffamily\bfseries\small] (g3) at ($(G3)+(0.5,-0.25)$) {Glc};
+\node[orange!80!black, font=\sffamily\bfseries\small, anchor=west] at ($(g3.east)+(0.05,0)$) {3-O-$\alpha$};
+\node[font=\Large, orange!80!black, rotate=-30] at ($(O3)+(0.62,-0.02)$) {\cut};
+\node[font=\sffamily\bfseries\large, orange!80!black] at ($(O3)+(0.9,0.2)$) {?};
+% annotation boxes
+\node[est, text width=4.3cm, font=\sffamily\footnotesize, align=left, anchor=north] at (-2.6,-1.25) {\textbf{7-O-$\beta$-glucose}\\ Cut by human LPH (gut lining) and CBG (inside cells), which cleave many flavonoid 7-glucosides.\\[1pt]\textit{Shown for other flavonoids; not yet for this one.}};
+\node[prop, text width=4.6cm, font=\sffamily\footnotesize, align=left, anchor=north] at (5.3,-2.35) {\textbf{3-O-$\alpha$-glucose (as reported)}\\ LPH and CBG are \emph{$\beta$}-glucosidases, so this bond may be skipped. Possible route: gut-bacterial $\alpha$-glucosidases.\\[1pt]\textit{Proposed; untested.}};
+\end{tikzpicture}

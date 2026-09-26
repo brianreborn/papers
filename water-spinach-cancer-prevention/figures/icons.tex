@@ -1,0 +1,65 @@
+% ---------- shared TikZ styles and icon "pics" for all figures ----------
+% Evidence legend used everywhere:
+%   teal solid   = Established (human data or direct biochemistry)
+%   navy solid   = Reported in models (cells / animals)
+%   orange dashed= Proposed (stop-gap or hypothesis)
+%   red dash-dot = Toxic / outside the thesis
+\tikzset{
+  est/.style={draw=teal, line width=1.3pt, fill=teallight, rounded corners=3pt},
+  mod/.style={draw=navy, line width=1.3pt, fill=navylight, rounded corners=3pt},
+  prop/.style={draw=orange, line width=1.3pt, dashed, fill=orangelight, rounded corners=6pt},
+  tox/.style={draw=red!70!black, line width=1.1pt, dash dot, fill=red!5, rounded corners=3pt},
+  aest/.style={-{Stealth[length=3.2mm]}, line width=1.6pt, teal},
+  amod/.style={-{Stealth[length=3.2mm]}, line width=1.6pt, navy},
+  aprop/.style={-{Stealth[length=3.2mm]}, line width=1.6pt, orange, dashed},
+  ainh/.style={-{Bar[width=3.4mm]}, line width=1.6pt, navy},
+  lbl/.style={font=\sffamily\small, align=center},
+  big/.style={font=\sffamily\bfseries\normalsize, align=center},
+  pics/leaf/.style={code={
+    \fill[teal!85!black] (0,0) .. controls (0.35,0.25) and (0.45,0.75) .. (0,1.15) .. controls (-0.45,0.75) and (-0.35,0.25) .. (0,0) -- cycle;
+    \draw[white, line width=0.8pt] (0,0.05) -- (0,1.0);
+    \draw[white, line width=0.5pt] (0,0.45) -- (0.18,0.62) (0,0.65) -- (-0.18,0.82) (0,0.3) -- (-0.17,0.45);
+    \draw[teal!60!black, line width=1.2pt] (0,0) -- (0,-0.25);}},
+  pics/wok/.style={code={
+    \fill[navy] (-0.55,0.1) arc[start angle=180,end angle=360,x radius=0.55,y radius=0.4] -- cycle;
+    \draw[navy, line width=1.6pt] (0.5,0.05) -- (0.95,0.25);
+    \foreach \x in {-0.25,0,0.25}{\draw[orange, line width=1pt] (\x,0.25) .. controls (\x+0.1,0.4) and (\x-0.1,0.5) .. (\x,0.65);}}},
+  pics/gut/.style={code={
+    \draw[navy!70, line width=4.5pt, line cap=round] (-0.6,0.5) .. controls (0.6,0.6) and (-0.6,0.1) .. (0.5,0.05) .. controls (0.9,0.0) and (-0.6,-0.4) .. (0.4,-0.5);
+    \draw[white, line width=1.2pt, line cap=round] (-0.6,0.5) .. controls (0.6,0.6) and (-0.6,0.1) .. (0.5,0.05) .. controls (0.9,0.0) and (-0.6,-0.4) .. (0.4,-0.5);}},
+  pics/liver/.style={code={
+    \fill[orange!80!red] (-0.7,0.15) .. controls (-0.6,0.55) and (0.3,0.6) .. (0.7,0.35) .. controls (0.6,-0.1) and (0.1,-0.45) .. (-0.35,-0.35) .. controls (-0.6,-0.25) .. (-0.7,0.15) -- cycle;
+    \draw[white, line width=0.6pt] (-0.1,0.45) -- (0.0,-0.3);}},
+  pics/cell/.style={code={
+    \draw[navy, line width=1.2pt, fill=navylight] (0,0) circle (0.55);
+    \fill[navy] (0.1,0.05) circle (0.2);}},
+  pics/bug/.style={code={
+    \draw[line width=0.9pt, orange!60!black, fill=orange!35, rounded corners=0.12cm] (-0.3,-0.12) rectangle (0.3,0.12);
+    \draw[orange!60!black, line width=0.6pt] (0.3,0) .. controls (0.4,0.1) and (0.45,-0.1) .. (0.55,0.02);}},
+  pics/people/.style={code={
+    \foreach \x/\c in {-0.35/navy,0/teal,0.35/navy}{\fill[\c] (\x,0.45) circle (0.13); \fill[\c, rounded corners=2pt] ({\x-0.15},0) rectangle ({\x+0.15},0.3);}}},
+  pics/mouse/.style={code={
+    \fill[navy!80] (0,0) ellipse (0.42 and 0.24);
+    \fill[navy!80] (0.38,0.12) circle (0.14);
+    \fill[navy!40] (0.38,0.12) circle (0.07);
+    \fill[white] (0.5,0.02) circle (0.03);
+    \draw[navy!80, line width=1pt] (-0.4,-0.05) .. controls (-0.7,-0.2) and (-0.7,0.2) .. (-0.95,0.05);}},
+  pics/flask/.style={code={
+    \draw[navy, line width=1.2pt, fill=teallight] (-0.1,0.5) -- (-0.1,0.2) -- (-0.4,-0.35) -- (0.4,-0.35) -- (0.1,0.2) -- (0.1,0.5);
+    \fill[teal] (-0.33,-0.25) -- (0.33,-0.25) -- (0.2,-0.02) -- (-0.2,-0.02) -- cycle;}},
+  pics/sugar/.style={code={
+    \node[regular polygon, regular polygon sides=6, minimum size=5.5mm, inner sep=0pt, draw=#1!70!black, fill=#1, line width=0.8pt] {};}},
+  pics/blood/.style={code={
+    \fill[red!70!black] (0,0.4) .. controls (0.1,0.2) and (0.28,0.05) .. (0.28,-0.1) arc[start angle=0,end angle=-180,radius=0.28] .. controls (-0.28,0.05) and (-0.1,0.2) .. (0,0.4);}},
+}
+\newcommand{\cut}{\ding{34}}
+\newcommand{\evlegend}{%
+\begin{tikzpicture}[font=\sffamily\footnotesize, baseline]
+\node[est, minimum width=7mm, minimum height=4mm] (a) {}; \node[right=1mm of a] (ta) {Established};
+\node[mod, minimum width=7mm, minimum height=4mm, right=4mm of ta] (b) {}; \node[right=1mm of b] (tb) {Reported in models};
+\node[prop, minimum width=7mm, minimum height=4mm, right=4mm of tb] (c) {}; \node[right=1mm of c] (tc) {Proposed / stop-gap};
+\node[tox, minimum width=7mm, minimum height=4mm, right=4mm of tc] (d) {}; \node[right=1mm of d] {Toxic / outside thesis};
+\end{tikzpicture}}
+\newcommand{\tagE}{\textcolor{teal}{\textsf{\textbf{[Established]}}}}
+\newcommand{\tagM}{\textcolor{navy}{\textsf{\textbf{[Reported in models]}}}}
+\newcommand{\tagP}{\textcolor{orange}{\textsf{\textbf{[Proposed]}}}}

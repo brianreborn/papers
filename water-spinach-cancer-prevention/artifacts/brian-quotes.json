@@ -1,0 +1,416 @@
+{
+ "note": "Exact texts of posts by @born_brian85001 and @BrianReborn_alt. text_exact is the full post text as returned by the X API / thread export. text_as_quoted omits only the leading run of @-reply handles (listed in leading_handles_omitted); nothing else is changed. In the PDF, emoji are shown as a bracketed editorial description because pdfLaTeX cannot typeset colour emoji. Only the posts actually quoted in the paper are listed. All X calls were read-only; nothing was posted.",
+ "retrieved": "2026-09-26 PT",
+ "posts": [
+  {
+   "id": "1731688059152834729",
+   "author": "born_brian85001",
+   "created_at_utc": "2023-12-04T14:53:01.000Z",
+   "created_at_pt": "2023-12-04T06:53:01-08:00",
+   "url": "https://x.com/born_brian85001/status/1731688059152834729",
+   "text_exact": "@truthscant @My_TeslaModelS @quantheoutlaw @BrockRiddickIFB They're morning glory seeds, mostly the heavenly blues and a couple of the purple varieties I forget the name of. https://t.co/fvaNRAtuZa",
+   "text_as_quoted": "They're morning glory seeds, mostly the heavenly blues and a couple of the purple varieties I forget the name of. https://t.co/fvaNRAtuZa",
+   "leading_handles_omitted": "@truthscant @My_TeslaModelS @quantheoutlaw @BrockRiddickIFB",
+   "retrieved_via": "X get_posts_by_ids 2026-09-26",
+   "used_in_paper": [
+    "Section 16: Safety Note [quote box]",
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "1732071882491416995",
+   "author": "born_brian85001",
+   "created_at_utc": "2023-12-05T16:18:11.000Z",
+   "created_at_pt": "2023-12-05T08:18:11-08:00",
+   "url": "https://x.com/born_brian85001/status/1732071882491416995",
+   "text_exact": "@FloridaSkyGal How about Field Bindweed? It's a tiny morning glory that, at least around here, is often almost pure white.\nhttps://t.co/s1VC6l4n5e",
+   "text_as_quoted": "How about Field Bindweed? It's a tiny morning glory that, at least around here, is often almost pure white.\nhttps://t.co/s1VC6l4n5e",
+   "leading_handles_omitted": "@FloridaSkyGal",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "1762103456179892669",
+   "author": "born_brian85001",
+   "created_at_utc": "2024-02-26T13:12:56.000Z",
+   "created_at_pt": "2024-02-26T05:12:56-08:00",
+   "url": "https://x.com/born_brian85001/status/1762103456179892669",
+   "text_exact": "@2POPESUN @BabyD1111229 According to The Man, \"morning glory seeds\" are highly toxic and I could talk for hours as to how deep of a lie that is.",
+   "text_as_quoted": "According to The Man, \"morning glory seeds\" are highly toxic and I could talk for hours as to how deep of a lie that is.",
+   "leading_handles_omitted": "@2POPESUN @BabyD1111229",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "1781568832605188543",
+   "author": "born_brian85001",
+   "created_at_utc": "2024-04-20T06:21:24.000Z",
+   "created_at_pt": "2024-04-19T23:21:24-07:00",
+   "url": "https://x.com/born_brian85001/status/1781568832605188543",
+   "text_exact": "@Noundela1 @blackswanroses Morning glory flowers and seeds have some good uses and I think it is a lot smarter to keep away from synthetic medications when treating things, so I would sooner turn that direction than drugs.\nhttps://t.co/9vi9HyjKkx",
+   "text_as_quoted": "Morning glory flowers and seeds have some good uses and I think it is a lot smarter to keep away from synthetic medications when treating things, so I would sooner turn that direction than drugs.\nhttps://t.co/9vi9HyjKkx",
+   "leading_handles_omitted": "@Noundela1 @blackswanroses",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2079981200429780998",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-07-22T17:25:37.000Z",
+   "created_at_pt": "2026-07-22T10:25:37-07:00",
+   "url": "https://x.com/born_brian85001/status/2079981200429780998",
+   "text_exact": "@SoCarTider I love that people are guessing the kind of plant the moment that I finish taking a walk to others in the neighborhood to take a picture of them! \n\nNotably, Ipomoea tricolor and batata are the same biblical \"kind\", are they not? God created many kinds, not millions of \"species\".",
+   "text_as_quoted": "I love that people are guessing the kind of plant the moment that I finish taking a walk to others in the neighborhood to take a picture of them! \n\nNotably, Ipomoea tricolor and batata are the same biblical \"kind\", are they not? God created many kinds, not millions of \"species\".",
+   "leading_handles_omitted": "@SoCarTider",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2080792129669038191",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-07-24T23:07:57.000Z",
+   "created_at_pt": "2026-07-24T16:07:57-07:00",
+   "url": "https://x.com/born_brian85001/status/2080792129669038191",
+   "text_exact": "That's cool, but did you know that another psychedelic, the Morning glory, can cure cancer? https://t.co/YDwIrvzcCx",
+   "text_as_quoted": "That's cool, but did you know that another psychedelic, the Morning glory, can cure cancer? https://t.co/YDwIrvzcCx",
+   "leading_handles_omitted": null,
+   "retrieved_via": "X search includes 2026-09-26 (originating post)",
+   "used_in_paper": [
+    "Section 1: Originating Statement [quote box]",
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2080799123910037944",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-07-24T23:35:45.000Z",
+   "created_at_pt": "2026-07-24T16:35:45-07:00",
+   "url": "https://x.com/born_brian85001/status/2080799123910037944",
+   "text_exact": "The crude methanolic extract of I. aquatica, as well as, its column fraction and the purified compound 7-O-β-D-glucopiranosil-dihidroquercetina-3-O-β-Dglucopiranosideo (44)  isolated from it, were investigated for cytotoxic properties [...]\nhttps://t.co/eq28jpB4Su",
+   "text_as_quoted": "The crude methanolic extract of I. aquatica, as well as, its column fraction and the purified compound 7-O-β-D-glucopiranosil-dihidroquercetina-3-O-β-Dglucopiranosideo (44)  isolated from it, were investigated for cytotoxic properties [...]\nhttps://t.co/eq28jpB4Su",
+   "leading_handles_omitted": null,
+   "retrieved_via": "X get_posts_by_ids 2026-09-26",
+   "used_in_paper": [
+    "Section 1: Originating Statement [quote box]",
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2080812768035492294",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-07-25T00:29:58.000Z",
+   "created_at_pt": "2026-07-24T17:29:58-07:00",
+   "url": "https://x.com/born_brian85001/status/2080812768035492294",
+   "text_exact": "@dragonwookie420 Thanks, Leo! Did you know that this kind of morning glory, the water spinach, grows prodigiously in waterways like drainage ditches and is also a very healthy food?\n\nI'm curious what Grok also thinks when it sees the referenced paper:\nhttps://t.co/9M2muluX4r",
+   "text_as_quoted": "Thanks, Leo! Did you know that this kind of morning glory, the water spinach, grows prodigiously in waterways like drainage ditches and is also a very healthy food?\n\nI'm curious what Grok also thinks when it sees the referenced paper:\nhttps://t.co/9M2muluX4r",
+   "leading_handles_omitted": "@dragonwookie420",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 2: Introduction [quote box]",
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2080815533545627794",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-07-25T00:40:57.000Z",
+   "created_at_pt": "2026-07-24T17:40:57-07:00",
+   "url": "https://x.com/born_brian85001/status/2080815533545627794",
+   "text_exact": "@dragonwookie420 Interesting: it appears if we expand the search to additional morning glory/sweet potato varieties, we find even more peer-reviewed scientific publications.\nhttps://t.co/7QLNqlwKvo",
+   "text_as_quoted": "Interesting: it appears if we expand the search to additional morning glory/sweet potato varieties, we find even more peer-reviewed scientific publications.\nhttps://t.co/7QLNqlwKvo",
+   "leading_handles_omitted": "@dragonwookie420",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2081172947277128130",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-07-26T00:21:11.000Z",
+   "created_at_pt": "2026-07-25T17:21:11-07:00",
+   "url": "https://x.com/born_brian85001/status/2081172947277128130",
+   "text_exact": "@LavenderKiss7 Thank you! My local church organized a little hike today and the marshmallow and the fennel and the field bindweed morning glories were all blooming a fair amount. It was nice to be able to share my knowledge of native plants with them, limited such as it is. https://t.co/LtrLPjDtW0",
+   "text_as_quoted": "Thank you! My local church organized a little hike today and the marshmallow and the fennel and the field bindweed morning glories were all blooming a fair amount. It was nice to be able to share my knowledge of native plants with them, limited such as it is. https://t.co/LtrLPjDtW0",
+   "leading_handles_omitted": "@LavenderKiss7",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2082136462024454196",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-07-28T16:09:51.000Z",
+   "created_at_pt": "2026-07-28T09:09:51-07:00",
+   "url": "https://x.com/born_brian85001/status/2082136462024454196",
+   "text_exact": "@LavenderKiss7 @Awurabena2 If it has beautiful flowers, it probably has powerful medicinal uses. True for dandelions, roses, lavender, morning glories....",
+   "text_as_quoted": "If it has beautiful flowers, it probably has powerful medicinal uses. True for dandelions, roses, lavender, morning glories....",
+   "leading_handles_omitted": "@LavenderKiss7 @Awurabena2",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2088459658923311197",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-08-15T02:55:59.000Z",
+   "created_at_pt": "2026-08-14T19:55:59-07:00",
+   "url": "https://x.com/born_brian85001/status/2088459658923311197",
+   "text_exact": "@grok @goldenheart1223 So let's see, now we've seen Jasmine cures cancer, monkfruit cures cancer https://t.co/uzyvtfG5KT, water spinach cures cancer https://t.co/rOXHqzpkFo... what's next?",
+   "text_as_quoted": "So let's see, now we've seen Jasmine cures cancer, monkfruit cures cancer https://t.co/uzyvtfG5KT, water spinach cures cancer https://t.co/rOXHqzpkFo... what's next?",
+   "leading_handles_omitted": "@grok @goldenheart1223",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2089555749815075008",
+   "author": "born_brian85001",
+   "created_at_utc": "2026-08-18T03:31:27.000Z",
+   "created_at_pt": "2026-08-17T20:31:27-07:00",
+   "url": "https://x.com/born_brian85001/status/2089555749815075008",
+   "text_exact": "@PlanetaryS936 Please don't forget the humble Morning Glory! While some varieties are full of lysergamides that are very close to LSD-25, others have amazing healing properties that obviously pharma doesn't want you to know of.\nhttps://t.co/PwpE8itrkz",
+   "text_as_quoted": "Please don't forget the humble Morning Glory! While some varieties are full of lysergamides that are very close to LSD-25, others have amazing healing properties that obviously pharma doesn't want you to know of.\nhttps://t.co/PwpE8itrkz",
+   "leading_handles_omitted": "@PlanetaryS936",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2102607071535669594",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-23T03:52:45.000Z",
+   "created_at_pt": "2026-09-22T20:52:45-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2102607071535669594",
+   "text_exact": "@txrrxstrxxl My morning glories are my most colorful tattoos because they're from the last several years. 🌞 https://t.co/6OMw4FHHms",
+   "text_as_quoted": "My morning glories are my most colorful tattoos because they're from the last several years. 🌞 https://t.co/6OMw4FHHms",
+   "leading_handles_omitted": "@txrrxstrxxl",
+   "retrieved_via": "X get_posts_by_ids 2026-09-26",
+   "used_in_paper": [
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103075947415269404",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T10:55:53.000Z",
+   "created_at_pt": "2026-09-24T03:55:53-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103075947415269404",
+   "text_exact": "@Prathkum @Grok, curing cancer is still largely in the purview of herbal remedies, no?",
+   "text_as_quoted": "@Grok, curing cancer is still largely in the purview of herbal remedies, no?",
+   "leading_handles_omitted": "@Prathkum",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 3: Author's Prior Public Commentary [quote box]",
+    "Section 4: Body of Work Timeline [Table 1 (timeline)]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103093157667946614",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:04:17.000Z",
+   "created_at_pt": "2026-09-24T05:04:17-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103093157667946614",
+   "text_exact": "@grok @Prathkum So, because it is proven by indigenous peoples as part of their Traditions rather than through a peer-reviewed study it is no longer supporting evidence even that they use these things traditionally in order to prevent diseases?",
+   "text_as_quoted": "So, because it is proven by indigenous peoples as part of their Traditions rather than through a peer-reviewed study it is no longer supporting evidence even that they use these things traditionally in order to prevent diseases?",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 3: Author's Prior Public Commentary [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103093487591965176",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:05:35.000Z",
+   "created_at_pt": "2026-09-24T05:05:35-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103093487591965176",
+   "text_exact": "@grok @Prathkum We both understand completely that the morning glories are perfectly safe for human trials and thus any lack thereof because of all of the supporting evidence of their cytotoxicity towards cancer cell lines is indication of a grand conspiracy: is that not correct?",
+   "text_as_quoted": "We both understand completely that the morning glories are perfectly safe for human trials and thus any lack thereof because of all of the supporting evidence of their cytotoxicity towards cancer cell lines is indication of a grand conspiracy: is that not correct?",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "X search 2026-09-26",
+   "used_in_paper": [
+    "Section 3: Author's Prior Public Commentary [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103094489598542039",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:09:34.000Z",
+   "created_at_pt": "2026-09-24T05:09:34-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103094489598542039",
+   "text_exact": "@grok @Prathkum So, it's a healthy food people just eat normally, yes? Like ipomoea batata? Please generate a nice little chart showing a number of common morning glories that people don't necessarily recognize as morning glories.",
+   "text_as_quoted": "So, it's a healthy food people just eat normally, yes? Like ipomoea batata? Please generate a nice little chart showing a number of common morning glories that people don't necessarily recognize as morning glories.",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 2: Introduction [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103094934547149089",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:11:20.000Z",
+   "created_at_pt": "2026-09-24T05:11:20-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103094934547149089",
+   "text_exact": "@grok @Prathkum Hypothetically it seems that if this were part of someone's diet even though low cytotoxicity is indicated in lab tests that persistent cytotoxicity would result in an overall greater at poptosis towards cancer cell lines then would otherwise exist without that in their diet.",
+   "text_as_quoted": "Hypothetically it seems that if this were part of someone's diet even though low cytotoxicity is indicated in lab tests that persistent cytotoxicity would result in an overall greater at poptosis towards cancer cell lines then would otherwise exist without that in their diet.",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 3: Author's Prior Public Commentary [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103095356758315034",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:13:01.000Z",
+   "created_at_pt": "2026-09-24T05:13:01-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103095356758315034",
+   "text_exact": "@grok @Prathkum I believe that we could prove this hypothesis right now. First I would like you to please render the molecule that is mentioned here and also highlight the part that is quercetina:\nhttps://t.co/DNVdbdA4Uj",
+   "text_as_quoted": "I believe that we could prove this hypothesis right now. First I would like you to please render the molecule that is mentioned here and also highlight the part that is quercetina:\nhttps://t.co/DNVdbdA4Uj",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 10: Proposed Mechanism [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103096988892053875",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:19:30.000Z",
+   "created_at_pt": "2026-09-24T05:19:30-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103096988892053875",
+   "text_exact": "@grok @Prathkum Please do a survey of pubmed, arxiv, etc. to find cross-sectional studies regarding the effects of quercetin containing compounds on various cancer cell lines in vitro and in titro. Please look for about a dozen such studies.",
+   "text_as_quoted": "Please do a survey of pubmed, arxiv, etc. to find cross-sectional studies regarding the effects of quercetin containing compounds on various cancer cell lines in vitro and in titro. Please look for about a dozen such studies.",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 8: Verification of Grok-Cited Studies and the 2005 Figures [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103097209789227371",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:20:23.000Z",
+   "created_at_pt": "2026-09-24T05:20:23-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103097209789227371",
+   "text_exact": "@grok @Prathkum It appears as if this compound could readily polymerize. Is there any indication in scientific literature that this occurs?",
+   "text_as_quoted": "It appears as if this compound could readily polymerize. Is there any indication in scientific literature that this occurs?",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 10: Proposed Mechanism [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103097586647503177",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:21:52.000Z",
+   "created_at_pt": "2026-09-24T05:21:52-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103097586647503177",
+   "text_exact": "@grok @Prathkum That is an excellent result but I actually was looking more for compounds that contain quercetin rather than quercetin alone.\n\nWhat enzymes commonly present in humans will readily break the quercetin molecule free from the larger molecule?",
+   "text_as_quoted": "That is an excellent result but I actually was looking more for compounds that contain quercetin rather than quercetin alone.\n\nWhat enzymes commonly present in humans will readily break the quercetin molecule free from the larger molecule?",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 10: Proposed Mechanism [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103098371632455790",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:25:00.000Z",
+   "created_at_pt": "2026-09-24T05:25:00-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103098371632455790",
+   "text_exact": "@grok @Prathkum I have two questions as a result of your answer. First, based upon studies what kind of effects can those glucosides be expected to have? Second does that mean that many well-known animals will digest water spinach in a similar way to humans with regard to this hydrolysis?",
+   "text_as_quoted": "I have two questions as a result of your answer. First, based upon studies what kind of effects can those glucosides be expected to have? Second does that mean that many well-known animals will digest water spinach in a similar way to humans with regard to this hydrolysis?",
+   "leading_handles_omitted": "@grok @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 10: Proposed Mechanism [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103099544393355690",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:29:39.000Z",
+   "created_at_pt": "2026-09-24T05:29:39-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103099544393355690",
+   "text_exact": "@grok @born_brian85001 @Prathkum Do we agree that hypothetically we should have some expectation of cancer preventative effects? We are just making our best guess here since we are not looking at data at the moment.",
+   "text_as_quoted": "Do we agree that hypothetically we should have some expectation of cancer preventative effects? We are just making our best guess here since we are not looking at data at the moment.",
+   "leading_handles_omitted": "@grok @born_brian85001 @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 3: Author's Prior Public Commentary [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103100421565034781",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:33:08.000Z",
+   "created_at_pt": "2026-09-24T05:33:08-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103100421565034781",
+   "text_exact": "@grok @born_brian85001 @Prathkum I'm sorry but I believe you misunderstood slightly but in a way that makes our conversation all the better. I was attempting to indicate the quercetin molecule here but now we might see that there is maybe even a potential broad cavalcade effect perhaps against cancer herein.",
+   "text_as_quoted": "I'm sorry but I believe you misunderstood slightly but in a way that makes our conversation all the better. I was attempting to indicate the quercetin molecule here but now we might see that there is maybe even a potential broad cavalcade effect perhaps against cancer herein.",
+   "leading_handles_omitted": "@grok @born_brian85001 @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 10: Proposed Mechanism [quote box]"
+   ],
+   "used": true
+  },
+  {
+   "id": "2103100829578481946",
+   "author": "BrianReborn_alt",
+   "created_at_utc": "2026-09-24T12:34:46.000Z",
+   "created_at_pt": "2026-09-24T05:34:46-07:00",
+   "url": "https://x.com/BrianReborn_alt/status/2103100829578481946",
+   "text_exact": "@grok @born_brian85001 @Prathkum (Did I use enough weasel-words to make it comfortable enough to answer with a simple yes? 😅🤔)",
+   "text_as_quoted": "(Did I use enough weasel-words to make it comfortable enough to answer with a simple yes? 😅🤔)",
+   "leading_handles_omitted": "@grok @born_brian85001 @Prathkum",
+   "retrieved_via": "thread-part2.json",
+   "used_in_paper": [
+    "Section 3: Author's Prior Public Commentary [quote box]"
+   ],
+   "used": true
+  }
+ ]
+}

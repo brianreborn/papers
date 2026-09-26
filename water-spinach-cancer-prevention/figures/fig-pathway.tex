@@ -1,0 +1,47 @@
+\begin{tikzpicture}[font=\sffamily, x=1cm, y=1cm]
+% molecule glyph: navy core, optional teal (7-beta) and orange (3-alpha) sugars
+\newcommand{\mol}[4]{% x,y, show7, show3
+  \fill[navy] (#1,#2) circle (0.2);
+  \ifnum#3=1 \node[regular polygon, regular polygon sides=6, minimum size=4.2mm, inner sep=0pt, fill=teal] at (#1-0.4,#2) {};\fi
+  \ifnum#4=1 \node[regular polygon, regular polygon sides=6, minimum size=4.2mm, inner sep=0pt, fill=orange] at (#1+0.4,#2) {};\fi}
+\newcommand{\station}[4]{% name, x, y, label
+  \node[lbl, text width=2.4cm, anchor=north, font=\sffamily\small] (#1) at (#2,#3-0.75) {#4};}
+% ---------- row 1 ----------
+\pic at (0,0) {leaf}; \station{s1}{0}{0}{\textbf{Leaf}\\ water spinach};
+\pic at (2.7,0.25) {wok}; \station{s2}{2.7}{0}{\textbf{Cook \& eat}\\ sugars still on};
+\mol{2.7}{1.25}{1}{1}
+\pic at (5.5,0.35) {gut}; \station{s3}{5.5}{0}{\textbf{Small intestine}\\ LPH/CBG \cut\ 7-O-$\beta$};
+\mol{5.5}{1.35}{0}{1}
+\pic at (8.4,0.35) {cell}; \station{s4}{8.4}{0}{\textbf{Gut-lining cell}\\ taxifolin enters\\ (rat: F $<$ 1\%)};
+\mol{8.4}{1.35}{0}{0}
+\pic at (11.2,0.3) {liver}; \station{s5}{11.2}{0}{\textbf{Liver}\\ phase II\\ conjugates};
+\pic at (14.0,0.3) {blood}; \station{s6}{14.0}{0}{\textbf{Blood, tissues}\\ low $\mu$M;\\ act in cells?};
+% row-1 arrows
+\draw[aest] (0.55,0.35) -- (1.95,0.35);
+\draw[aest] (3.55,0.35) -- (4.75,0.35);
+\draw[amod] (6.25,0.35) -- (7.7,0.35);
+\draw[aest] (9.05,0.35) -- (10.4,0.35);
+\draw[aprop] (11.95,0.35) -- (13.55,0.35);
+% ---------- row 2: the alpha-link detour ----------
+\draw[aprop] (5.5,-2.0) -- (5.5,-3.75);
+\node[anchor=east, font=\sffamily\small, text=orange!85!black, align=right] at (5.3,-2.85) {3-O-$\alpha$ sugar left on:\\ not an LPH/CBG substrate?};
+\mol{-0.1}{-3.05}{0}{1}
+\foreach \dx/\dy/\r in {-0.45/0.1/20,0/-0.2/-15,0.45/0.12/35,-0.2/0.35/0,0.3/-0.38/60}{\pic[rotate=\r] at ({5.5+\dx},{-4.45+\dy}) {bug};}
+\node[lbl, text width=3.1cm, anchor=north, font=\sffamily\small] at (5.5,-5.0) {\textbf{Colon bacteria}\\ may cut the $\alpha$ sugar};
+\draw[aprop] (6.2,-4.0) -- (7.55,-2.25);
+\node[anchor=west, font=\sffamily\small, text=orange!85!black] at (7.05,-3.15) {taxifolin freed and absorbed?};
+\draw[amod] (6.35,-4.6) -- (9.4,-4.6) node[right, lbl, text width=4.2cm, align=left, font=\sffamily\small, text=navy] {\textbf{or broken down} to phenolic\\ acids (\emph{E.~ramulus}, in vitro)};
+% bands
+\begin{scope}[on background layer]
+\fill[teallight!60] (-0.9,-2.35) rectangle (15.1,2.0);
+\fill[orangelight!70] (-0.9,-2.35) rectangle (15.1,-6.85);
+\end{scope}
+\node[anchor=north west, font=\sffamily\bfseries\small, text=teal!80!black] at (-0.85,1.95) {Main route};
+\node[anchor=south west, font=\sffamily\bfseries\small, text=orange!85!black] at (-0.85,-6.8) {Alternate route (the $\alpha$-link caveat)};
+% key for glyph
+\begin{scope}[shift={(9.0,-5.85)}]
+\fill[navy] (0,0) circle (0.15); \node[anchor=west, font=\sffamily\scriptsize] at (0.2,0) {taxifolin core};
+\node[regular polygon, regular polygon sides=6, minimum size=3.4mm, inner sep=0pt, fill=teal] at (2.2,0) {}; \node[anchor=west, font=\sffamily\scriptsize] at (2.4,0) {7-O-$\beta$ Glc};
+\node[regular polygon, regular polygon sides=6, minimum size=3.4mm, inner sep=0pt, fill=orange] at (4.2,0) {}; \node[anchor=west, font=\sffamily\scriptsize] at (4.4,0) {3-O-$\alpha$ Glc};
+\end{scope}
+\end{tikzpicture}

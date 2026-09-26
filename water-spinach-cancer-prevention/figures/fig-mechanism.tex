@@ -1,0 +1,51 @@
+\begin{tikzpicture}[font=\sffamily\small, x=1cm, y=1cm,
+  bx/.style={inner sep=3pt, align=center, font=\sffamily\small, text width=#1},
+  bx/.default=2.4cm]
+% ---- lumen ----
+\fill[orangelight!80] (-1.5,-4.6) rectangle (1.7,4.6);
+\node[font=\sffamily\bfseries, text=orange!85!black, align=center] at (0.1,4.1) {GUT\\LUMEN};
+\fill[navy] (0.1,2.4) circle (0.22);
+\node[regular polygon, regular polygon sides=6, minimum size=4.6mm, inner sep=0pt, fill=teal] at (-0.35,2.4) {};
+\node[regular polygon, regular polygon sides=6, minimum size=4.6mm, inner sep=0pt, fill=orange] at (0.55,2.4) {};
+\node[font=\sffamily\scriptsize, align=center] at (0.1,1.85) {\textbf{M1} diglucoside};
+\node[font=\sffamily\scriptsize, align=center, text=teal!80!black] at (0.1,1.1) {\textbf{M2} LPH \cut\\ 7-O-$\beta$ sugar};
+\foreach \dx/\dy/\r in {-0.6/-1.3/15,0.1/-1.6/-20,0.7/-1.2/40}{\pic[rotate=\r] at ({0.1+\dx},{\dy}) {bug};}
+\node[font=\sffamily\scriptsize, align=center, text=orange!85!black] at (0.1,-2.3) {\textbf{M3} bacteria:\\ $\alpha$-sugar cut?};
+\node[font=\sffamily\scriptsize, align=center, text=navy] at (0.1,-3.4) {or core broken\\ to phenolic acids};
+% ---- cell ----
+\draw[navy, line width=3pt, fill=white, rounded corners=18pt] (2.1,-4.4) rectangle (14.6,4.4);
+\node[font=\sffamily\bfseries, text=navy] at (11.2,-3.95) {A CELL (e.g.\ colon lining)};
+\draw[navy, line width=1.5pt, fill=navylight] (11.9,0.4) ellipse (2.2 and 2.55);
+\node[font=\sffamily\bfseries\small, text=navy] at (11.9,2.45) {NUCLEUS};
+\draw[navy!70, line width=1pt, domain=0:2.4, samples=60, smooth, variable=\t] plot ({10.7+\t},{-1.25+0.18*sin(\t*260)});
+\draw[orange!80!black, line width=1pt, domain=0:2.4, samples=60, smooth, variable=\t] plot ({10.7+\t},{-1.25-0.18*sin(\t*260)});
+\node[font=\sffamily\scriptsize, text=navy] at (11.9,-1.7) {DNA};
+% taxifolin
+\draw[aest] (1.1,2.4) -- (3.1,1.0);
+\node[mod, bx=2.0cm] (tax) at (4.0,0.5) {\textbf{M4 taxifolin}\\{\scriptsize low uptake}};
+\node[est, bx=2.2cm] (p2) at (4.0,-2.4) {\textbf{M5 phase II}\\{\scriptsize glucuronide, sulfate}};
+\draw[aest] (tax) -- (p2);
+\draw[aest] (p2.south) -- (4.0,-5.0);
+\pic[scale=0.8] at (4.0,-5.55) {blood};
+\node[font=\sffamily\scriptsize, text=teal!80!black, anchor=east, align=right] at (3.7,-5.45) {to blood:\\ low-$\mu$M conjugates};
+% EGFR
+\draw[navy, line width=2.2pt] (7.4,4.75) -- (7.4,3.75); \draw[navy, line width=2.2pt] (7.4,4.75) -- (7.1,5.15); \draw[navy, line width=2.2pt] (7.4,4.75) -- (7.7,5.15);
+\node[mod, bx=2.2cm] (egfr) at (7.4,3.0) {\textbf{M6 EGFR / PI3K}\\{\scriptsize growth signals}};
+\draw[ainh] (tax.north east) to[bend left=12] (egfr.west);
+% antioxidant
+\node[mod, bx=2.1cm] (ros) at (4.0,3.1) {\textbf{M9 mops up radicals}\\{\scriptsize less DNA damage}};
+\draw[amod] (tax.north) -- (ros.south);
+
+% Nrf2
+\node[mod, bx=1.8cm] (nrf) at (7.4,0.5) {\textbf{M7 Nrf2}\\{\scriptsize switched on}};
+\draw[amod] (tax.east) -- (nrf.west);
+\node[mod, bx=2.0cm] (are) at (11.9,0.9) {\textbf{ARE genes}\\{\scriptsize NQO1, GST (detox)}};
+\draw[amod] (nrf.east) -- (are.west);
+% NF-kB / Wnt
+\node[mod, bx=2.4cm] (nfk) at (7.4,-1.95) {\textbf{M8 NF-$\kappa$B,}\\\textbf{Wnt/$\beta$-catenin}\\{\scriptsize COX-2, cyclin D1}};
+\draw[ainh] (tax.south east) to[bend right=12] (nfk.north west);
+% outcome below the cell
+\node[prop, bx=4.6cm] (out) at (10.2,-5.5) {\textbf{M10 fewer mutations, less growth signalling: lower cancer risk over years?}};
+\draw[aprop] (nfk.south) |- (out.west);
+\draw[aprop] (are.east) -- (14.3,0.9) |- (out.east);
+\end{tikzpicture}
