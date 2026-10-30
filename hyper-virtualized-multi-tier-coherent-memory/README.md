@@ -1,3 +1,7 @@
+**Formats.** This directory’s canonical text is the Markdown below. Companion binaries (PDF and DOCX) are generated from the same source and can be added alongside this file (e.g. `HyperVirtualized_MultiTier_Coherent_Memory_Preliminary_Design.pdf`).
+
+---
+
 **Hyper-Virtualized Multi-Tier Coherent Memory**
 
 *An N-ary Ownership Protocol for GPU, Host, and Firmware-Assisted Storage*
