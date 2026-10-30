@@ -1,25 +1,14 @@
-# PDF and DOCX companions
+# PDF + DOCX companions
 
-Archive format: **xz (LZMA2)** — same compression family as 7-Zip’s default method.  
-**Not** DEFLATE / gzip / LZ77-style zip deflate.
+Compressed with **xz (LZMA2)** (7-Zip family, not DEFLATE).
+Encoded with **base85** (~25% overhead vs base64’s ~33%).
+Split into `b85_00` … `b85_24` for the text API.
 
-Encoding: base64, split into `part_00` … `part_07` for transport.
-
-## Restore
+## Restore (one command)
 
 ```bash
-cd binaries
+cd hyper-virtualized-multi-tier-coherent-memory/binaries
 sh RESTORE.sh
 ```
 
-Or manually:
-
-```bash
-cat part_00 part_01 part_02 part_03 part_04 part_05 part_06 part_07 > papers_binaries.tar.xz.b64
-base64 -d papers_binaries.tar.xz.b64 | tar -xJf -
-```
-
-Yields:
-
-- `HyperVirtualized_MultiTier_Coherent_Memory_Preliminary_Design.pdf`
-- `HyperVirtualized_MultiTier_Coherent_Memory_Preliminary_Design.docx`
+Produces the PDF and DOCX next to the script.
